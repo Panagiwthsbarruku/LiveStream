@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="website icon" type="image/png" href="Untitled design.png">
+    <title>LiveStream</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><span>Live</span>Stream</h1>
+        </div>
+    </header>
+    <nav class="navbar">
+        <button class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li class="link"><a href="#">Ο ΣΤΑΘΜΟΣ</a></li>
+            <li class="link"><a href="#">ΔΙΑΓΩΝΙΣΜΟΙ</a></li>
+            <li class="link"><a href="#">ΝΕΑ</a></li>
+            <li class="link"><a href="#">ΠΡΟΓΡΑΜΜΑ</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="radio-container">
+            <img src="Untitled design.png" alt="Live Stream" width="300" style=" border-radius: 20px; transform: translateY(-4.3px); box-shadow: 40px 30px 20px solid black;">
+        </div>
+        
+        <!-- Προσθήκη του στοιχείου audio -->
+        <audio id="radioPlayer" preload="auto">
+            <source src="http://stream.radiojar.com/t0x7dyqmsuhvv" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <a href="#" class="radio-button" id="playButton">
+            <i class="fas fa-play" id="playIcon"></i> ΑΚΟΥΣΤΕ
+        </a>
+    </section>
+    <footer class="footer-container">
+        <p>&copy; 2025 LiveStream. Όλα τα δικαιώματα κατοχυρωμένα.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/daffys.tsomys/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/tsomys_daffys/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/results?search_query=thesstaxidi"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
