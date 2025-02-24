@@ -23,7 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuToggle.addEventListener("click", function () {
         navLinks.classList.toggle("active");
+
+        // Αλλάζει το κείμενο του κουμπιού σε "Χ" όταν ανοίγει το μενού
+        if (navLinks.classList.contains("active")) {
+            menuToggle.innerHTML = "&times;"; // Unicode για το σύμβολο Χ
+        } else {
+            menuToggle.innerHTML = "☰"; // Επιστρέφει το burger menu όταν κλείνει
+        }
     });
 });
-
-
