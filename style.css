@@ -1,0 +1,179 @@
+/* Βασικές ρυθμίσεις */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#ff9900,#d300ff);
+}
+
+/* Κεφαλίδα */
+header {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-family: 'Roboto', serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Μενού */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    padding: 0;
+    margin: auto;
+}
+
+.nav-links .link a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-family: 'Roboto',sans-serif;
+}
+
+.nav-links .link a:hover {
+    color: #110e05;
+}
+
+/* Toggle Button για κινητά */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Player Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  
+.radio-container {
+    text-align: center;
+    perspective: 800px;
+}
+
+.radio-container img {
+    transition: transform 0.2s ease-out;
+}
+
+.radio-button {
+    background-color: #ffcc00;
+    color: rgb(255, 255, 255);
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.radio-button i {
+    font-size: 24px;
+}
+
+.radio-button:hover {
+    background-color: #ff9900;
+}
+
+/* Footer */
+.footer-container {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: 'Roboto',sans-serif;
+}
+
+.social-icons a:hover {
+    color: #161306;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #d300ff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .radio-container img {
+        width: 70%;
+        height: auto;
+    }
+
+    .radio-button {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+span {
+    animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+    40% {
+        color: #ff3434;
+    }
+}
